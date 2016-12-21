@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+
+<head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <meta charset="utf-8">
+    <!-- If you delete this meta tag World War Z will become a reality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos - Make It Soft</title>
+
+    <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <!-- If you are using the gem version, you need this only -->
+
+
+    <link href="css/planos.css" rel="stylesheet" />
+    <link href="css/ihover.css" rel="stylesheet">
+    <link href="css/menulateral.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        // <![CDATA[
+        $(document).ready(function () {
+            function filterPath(string) {
+                return string
+                .replace(/^\//, '')
+                .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+                .replace(/\/$/, '');
+            }
+            $('a[href*=#]').each(function () {
+                if (filterPath(location.pathname) == filterPath(this.pathname)
+                    && location.hostname == this.hostname
+                    && this.hash.replace(/#/, '')) {
+                    var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                if ($target) {
+                    var targetOffset = $target.offset().top;
+                    $(this).click(function () {
+                        $('html, body').animate({ scrollTop: targetOffset }, 700);
+                        return false;
+                    });
+                }
+            }
+        });
+        });
+// ]]></script>
+
+<!--Button Scroll to top-->
+    
+    
+    <link href="css/buttonTop.css" rel="stylesheet">
+    <script src="js/buttonTop.js"></script>    
+
+    <!--Fim-->
+
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/header.js"></script>
+
+<!-- ON SCROLL ANIMATIONS -->
+<link rel="stylesheet" href="css/animations.css">
+
+</head>
+<body>
+    <div class="hide-for-medium-down">
+    <div class="scroll-top-wrapper ">
+    <span class="scroll-top-inner">
+        
+    </span>
+</div>
+        <header class="header">
+            <div class="centroMenu">
+                <a href="index.html"><img id="imgMenu" src="img/logoSemText.png" /></a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="index.html#equipe">Equipe</a></li>
+                        <li><a href="index.html#servicos">Serviços</a></li>
+                        <li><a href="index.html#pacotes">Planos</a></li>
+                        <li><a href="index.html#portfolio">Portfólio</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="show-for-small-up hide-for-medium-down">
+            <section class="module parallax parallax-4">
+                <div class="pattern">
+                    <div class="container centroHeader animatedParent animateOnce" style="padding-top:175px;">
+                        <h1 class="hide-for-medium-down animated bounceInDown" style="font-size: 80px;margin:0;">Compre seu <span style="color: #2765c8; ">Plano</span></h1>
+                        <h3 class="textoHeader" style="margin-top:65px;"><i>"Discórdias comprovam a vontade de vitória. E essa vontade apenas é saciada com a perfeição." - Make It Soft</i></h3>
+                        <div class="centro" style="width:650px;">
+                            <p><a style="width:150px; float:left;" href="#gold" class="button btn btn-1 btn-1e botaoPlanosCompra botaoGold">GOLD</a></p>
+                            <p><a style="width:150px; float:left;" href="#platinum" class="button btn btn-1 btn-1e botaoPlanosCompra botaoPlatinum">PLATINUM</a></p>
+                            <p><a style="width:150px; float:left;" href="#ruby" class="button btn btn-1 btn-1e botaoPlanosCompra botaoRuby">RUBY</a></p>
+                            <p style="margin-right:0; float:left;"><a href="#esmerald" style="width:150px;" class="button btn btn-1 btn-1e botaoPlanosCompra botaoEsmerald">EMERALD</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="module content backCinza" style="width:100%; ">
+            <div class="centro container">
+                <div class="center">
+                    <h3 class="titlePacote">Preço dos Planos</h3>
+                </div>
+                <div id="respPlanos" style="width:1140px; margin:0 auto;">
+                    <a name="gold"></a>
+                    <div style="height:50px;"></div>
+                    <div class="infoPlanos animatedParent">
+
+                        <h3 style="margin-top: 35px;" class="gold titlePags animated bounceInDown">Gold</h3>
+                        <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>                  
+                        <h4 class="textoSobre animated bounceInDown">Paginas limitadas: 3 páginas.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente.</h4>
+
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente.</h4>
+                    </div>
+                    <div class="caixaPlanos plano01s">
+                        <div class="plano01Ps">
+                            <h3 class="titlePlanos">Gold</h3>
+                            <p class="linhaBonia"></p>
+                            <p class="precoPlanos">
+                                <span class="moeda">R$</span>
+                                <span class="preco">2000</span>
+                                <span class="precoDecimal">.00</span>
+                                <span class="duracao">/1 mês</span>
+                            </p>
+                        </div>
+                        <ul class="listaP">
+                            <li style="margin-top: 33px;">3 páginas</li>
+                            <li>Logotipo</li>
+                            <li>Layout de site</li>
+                            <li>Consultoria de marca</li>
+                            <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="compraGold.html" class="botaoPlanos btnPlano01">COMPRE AGORA</a></p>
+                        </ul>
+                    </div>
+                    <div class="clearBoth"></div>
+
+                    <a name="platinum"></a>
+                    <div style="height:50px;"></div>
+                    <div class="infoPlanos animatedParent ">
+
+                        <h3 style="margin-top: 35px;" class="platinum titlePags animated bounceInDown">Platinum</h3>
+                        <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+                        <h4 class="textoSobre animated bounceInDown">Pacote incluso:Gold</h4>
+                        <h4 class="textoSobre animated bounceInDown">Páginas limitadas: 10 páginas</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">
+Criação de aplicativo: Nossa equipe de designers e programadores irá ajudar na criação de um aplicativo para sua empresa que esteja compativel com o nosso padrão de qualidade e a satisfação do cliente</h4>
+                    </div>
+                    <div class="caixaPlanos plano01s">
+                        <div class="plano02Ps">
+                            <h3 class="titlePlanos">Platinum</h3>
+                            <p class="linhaBonia"></p>
+                            <p class="precoPlanos">
+                                <span class="moeda">R$</span>
+                                <span class="preco">2500</span>
+                                <span class="precoDecimal">.00</span>
+                                <span class="duracao">/3 mês</span>
+                            </p>
+                        </div>
+                        <ul class="listaP">
+                            <li style="margin-top: 33px;">10 páginas</li>
+                            <li>Logotipo</li>
+                            <li>Layout de site</li>
+                            <li>Criação de aplicativo</li>
+                            <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="compraPlatinum.html" class="botaoPlanos btnPlano02">COMPRE AGORA</a></p>
+                        </ul>
+                    </div>
+                    <div class="clearBoth"></div>
+                    <a name="ruby"></a>
+                    <div style="height:50px;"></div>
+                    <div class="infoPlanos animatedParent ">
+                        <h3 style="margin-top: 35px;" class="ruby titlePags animated bounceInDown">Ruby</h3>
+                        <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+                        <h4 class="textoSobre animated bounceInDown">Pacotes inclusos:Gold,Platinum</h4>
+                        <h4 class="textoSobre animated bounceInDown">Páginas limitadas: Sem limites.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Criação de aplicativo: Nossa equipe de designers e programadores irá ajudar na criação de um aplicativo para sua empresa que esteja compativel com o nosso padrão de qualidade e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Suporte: nossa assistencia técnica irá garantir segurança e correção de bugs ao site/aplicativo por 6 meses.</h4>
+                    </div>
+                    <div class="caixaPlanos plano01s">
+                        <div class="plano04Ps">
+                            <h3 class="titlePlanos">Ruby</h3>
+                            <p class="linhaBonia"></p>
+                            <p class="precoPlanos">
+                                <span class="moeda">R$</span>
+                                <span class="preco">3250</span>
+                                <span class="precoDecimal">.00</span>
+                                <span class="duracao">/6 mês</span>
+                            </p>
+                        </div>
+                        <ul class="listaP">
+                            <li style="margin-top: 33px;">Sem limite de páginas</li>
+                            <li>Logotipo</li>
+                            <li>Layout</li>
+                            <li>6 meses de suporte</li>
+                            <p style="text-align: center;margin-top:25px; margin-bottom:45px;"><a href="compraRuby.html" class="botaoPlanos btnPlano04">COMPRE AGORA</a></p>
+                        </ul>
+
+                    </div>
+                    <div class="clearBoth"></div>
+                    <a name="esmerald"></a>
+                    <div style="height:50px;"></div>
+                    <div class="infoPlanos animatedParent">
+
+                        <h3 style="margin-top: 35px;" class="esmerald titlePags animated bounceInDown">Emerald</h3>
+                        <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+                        <h4 class="textoSobre animated bounceInDown">Pacotes inclusos:Gold,Platinum,Ruby</h4>
+                        <h4 class="textoSobre animated bounceInDown">Páginas limitadas: Sem limites.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Criação de aplicativo: Nossa equipe de designers e programadores irá ajudar na criação de um aplicativo para sua empresa que esteja compativel com o nosso padrão de qualidade e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Suporte: nossa assistencia técnica irá garantir segurança e correção de bugs ao site/aplicativo por 6 meses.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Otimização SEO: A Make it Soft possui uma equipe de profissionais de SEO altamente qualificada e especializada em otimização de sites, que acompanha constantemente as atualizações do mercado e dos algoritmos dos mecanismos de pesquisa, com o objetivo de posicionar e manter o seu site em destaque nos resultados de busca do Google, Yahoo, MSN/Live Search e outros.</h4>
+                    </div>
+                    <div class="caixaPlanos plano01s">
+                        <div class="plano03Ps">
+                            <h3 class="titlePlanos">Emerald</h3>
+                            <p class="linhaBonia"></p>
+                            <p class="precoPlanos">
+                                <span class="moeda">R$</span>
+                                <span class="preco">5000</span>
+                                <span class="precoDecimal">.00</span>
+                                <span class="duracao">/1 ano</span>
+                            </p>
+                        </div>
+                        <ul class="listaP">
+                            <li style="margin-top: 33px;">Sem limite de páginas</li>
+                            <li>1 ano de suporte</li>
+                            <li>Assistência de marketing</li>
+                            <li>Otimização SEO</li>
+                            <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="compraEsmerald.html" class="botaoPlanos btnPlano03">COMPRE AGORA</a></p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clearBoth"></div>
+        </section>    
+        <div class="clearBoth"></div>
+
+    </section>
+    <div class="clearBoth"></div>
+    <div class="footer">
+        <h3 style="margin:0px;"class="textFooter">&copy; Todos os direitos reservados -<span style="color:#2765c8"> Make It Soft</span></h3>
+    </div>
+
+</div>
+
+<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+
+<!--CELULAR-->
+<!--CELULAR-->
+<!--CELULAR-->
+<!--CELULAR-->
+<!--CELULAR-->
+
+
+<div class="show-for-medium-down">
+<div class="scroll-top-wrapper ">
+    <span class="scroll-top-inner">
+        
+    </span>
+</div>
+    <div class="off-canvas-wrap " data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="header"></nav>
+            <a class="right-off-canvas-toggle" href="#">
+                <div class="menu">
+                    <div class="top-bar"></div>
+                    <div class="middle-bar"></div>
+                    <div class="bottom-bar"></div>
+                </div>
+            </a>
+        </nav>
+        <!-- Off Canvas Menu -->
+        <aside class="right-off-canvas-menu">
+            <!-- whatever you want goes here -->
+            <ul class="side-nav main">
+                <li><a class="is-active" href="index.html#homeresp">home</a></li>
+                <li><a href="index.html#sobreresp">sobre</a></li>
+                <li><a href="index.html#equiperesp">equipe</a></li>
+                <li><a href="index.html#servicosresp">serviços</a></li>
+                <li><a href="index.html#pacotesresp">planos</a></li>
+                <li><a href="index.html#portfolioresp">portfólio</a></li>
+                <li><a href="index.html#contatoresp">contato</a></li>
+            </ul>
+        </aside>
+        <div class="resp">
+        <section class="hero">
+            <div class="show-for-small-up">
+                <section class="module parallax parallax-4">
+                    <div class="pattern">
+                        <div class="container" style="width: 75%; margin: 0 auto;">
+                            <h1 style="font-size: 60px;margin:0; widht:100%;">COMPRE SEU <span style="color: #2765c8; ">PLANO</span></h1>
+                            <h3 class="textoHeader" style="margin-top: 10px;"><i>"Discórdias comprovam a vontade de vitória. E essa vontade apenas é saciada com a perfeição." - MIS</i></h3>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        </div>
+        <!-- main content goes here -->
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+
+    </div>
+</div>
+
+<section class="module content backCinza" style="width:100%; ">
+    <div class="resp_centro container">
+        <div class="center">
+            <h3 class="titlePacote">Preço dos Planos</h3>
+        </div>
+        <div class="resp_planos">
+            <a name="goldresp"></a>
+            <div style="height:50px;"></div>
+            <div class="resp_infoPlanos animatedParent">
+
+                <h3 style="margin-top: 35px;" class="gold titlePags animated bounceInDown">Gold</h3>
+                <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>                  
+                        <h4 class="textoSobre animated bounceInDown">Paginas limitadas: 3 páginas.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente.</h4>
+
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente.</h4>
+            </div>
+            <div class="resp_caixaPlanos plano01s">
+                <div class="plano01Ps">
+                    <h3 class="titlePlanos">Gold</h3>
+                    <p class="linhaBonia"></p>
+                    <p class="precoPlanos">
+                        <span class="moeda">R$</span>
+                        <span class="preco">2000</span>
+                        <span class="precoDecimal">.00</span>
+                        <span class="duracao">/1 mês</span>
+                    </p>
+                </div>
+                <ul class="listaP">
+                    <li style="margin-top: 33px;">3 páginas</li>
+                            <li>Logotipo</li>
+                            <li>Layout de site</li>
+                            <li>Consultoria de marca</li>
+                    <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="compraGold.html" class="botaoPlanos btnPlano01">COMPRE AGORA</a></p>
+                </ul>
+            </div>
+            
+
+            <a name="platinumresp"></a>
+            <div style="height:50px;"></div>
+            <div class="resp_infoPlanos animatedParent ">
+
+                <h3 style="margin-top: 35px;" class="platinum titlePags animated bounceInDown">Platinum</h3>
+                <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+                <h4 class="textoSobre animated bounceInDown">Pacote incluso:Gold</h4>
+                        <h4 class="textoSobre animated bounceInDown">Páginas limitadas: 10 páginas</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">
+Criação de aplicativo: Nossa equipe de designers e programadores irá ajudar na criação de um aplicativo para sua empresa que esteja compativel com o nosso padrão de qualidade e a satisfação do cliente</h4>
+            </div>
+            <div class="resp_caixaPlanos plano01s">
+                <div class="plano02Ps">
+                    <h3 class="titlePlanos">Platinum</h3>
+                    <p class="linhaBonia"></p>
+                    <p class="precoPlanos">
+                        <span class="moeda">R$</span>
+                        <span class="preco">2500</span>
+                        <span class="precoDecimal">.00</span>
+                        <span class="duracao">/3 mês</span>
+                    </p>
+                </div>
+                <ul class="listaP">
+                    <li style="margin-top: 33px;">10 páginas</li>
+                            <li>Logotipo</li>
+                            <li>Layout de site</li>
+                            <li>Criação de aplicativo</li>
+                    <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="compraPlatinum.html" class="botaoPlanos btnPlano02">COMPRE AGORA</a></p>
+                </ul>
+            </div>
+            <div class="clearBoth"></div>
+            <a name="rubyresp"></a>
+            <div style="height:50px;"></div>
+            <div class="resp_infoPlanos animatedParent ">
+                <h3 style="margin-top: 35px;" class="ruby titlePags animated bounceInDown">Ruby</h3>
+                <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+                <h4 class="textoSobre animated bounceInDown">Pacotes inclusos:Gold,Platinum</h4>
+                        <h4 class="textoSobre animated bounceInDown">Páginas limitadas: Sem limites.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Criação de aplicativo: Nossa equipe de designers e programadores irá ajudar na criação de um aplicativo para sua empresa que esteja compativel com o nosso padrão de qualidade e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Suporte: nossa assistencia técnica irá garantir segurança e correção de bugs ao site/aplicativo por 6 meses.</h4>
+            </div>
+            <div class="resp_caixaPlanos plano01s">
+                <div class="plano04Ps">
+                    <h3 class="titlePlanos">Ruby</h3>
+                    <p class="linhaBonia"></p>
+                    <p class="precoPlanos">
+                        <span class="moeda">R$</span>
+                        <span class="preco">3250</span>
+                        <span class="precoDecimal">.00</span>
+                        <span class="duracao">/6 mês</span>
+                    </p>
+                </div>
+                <ul class="listaP">
+                    <li style="margin-top: 33px;">Sem limite de páginas</li>
+                            <li>Logotipo</li>
+                            <li>Layout</li>
+                            <li>6 meses de suporte</li>
+                    <p style="text-align: center;margin-top:25px; margin-bottom:45px;"><a href="compraRuby.html" class="botaoPlanos btnPlano04">COMPRE AGORA</a></p>
+                </ul>
+
+            </div>
+            <div class="clearBoth"></div>
+            <a name="esmeraldresp"></a>
+            <div style="height:50px;"></div>
+            <div class="resp_infoPlanos animatedParent">
+
+                <h3 style="margin-top: 35px;" class="esmerald titlePags animated bounceInDown">Emerald</h3>
+                <h3 class="titleSobreNos animated bounceInDown">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+                <h4 class="textoSobre animated bounceInDown">Pacotes inclusos:Gold,Platinum,Ruby</h4>
+                        <h4 class="textoSobre animated bounceInDown">Páginas limitadas: Sem limites.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Logotipo: nossa equipe de designers irá ajudar à criar um logo que seja conivente com o padrão de qualidade da empresa e que satisfaça o cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Layout de site: nossa equipe de designers irá ajudar a desenhar o site que seja compativel com o padrão de qualidade da empresa e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Criação de aplicativo: Nossa equipe de designers e programadores irá ajudar na criação de um aplicativo para sua empresa que esteja compativel com o nosso padrão de qualidade e a satisfação do cliente</h4>
+                        <h4 class="textoSobre animated bounceInDown">Suporte: nossa assistencia técnica irá garantir segurança e correção de bugs ao site/aplicativo por 6 meses.</h4>
+                        <h4 class="textoSobre animated bounceInDown">Otimização SEO: A Make it Soft possui uma equipe de profissionais de SEO altamente qualificada e especializada em otimização de sites, que acompanha constantemente as atualizações do mercado e dos algoritmos dos mecanismos de pesquisa, com o objetivo de posicionar e manter o seu site em destaque nos resultados de busca do Google, Yahoo, MSN/Live Search e outros.</h4>
+            </div>
+            <div class="resp_caixaPlanos plano01s">
+                <div class="plano03Ps">
+                    <h3 class="titlePlanos">Emerald</h3>
+                    <p class="linhaBonia"></p>
+                    <p class="precoPlanos">
+                        <span class="moeda">R$</span>
+                        <span class="preco">5000</span>
+                        <span class="precoDecimal">.00</span>
+                        <span class="duracao">/1 ano</span>
+                    </p>
+                </div>
+                <ul class="listaP">
+                    <li style="margin-top: 33px;">Sem limite de páginas</li>
+                            <li>1 ano de suporte</li>
+                            <li>Assistência de marketing</li>
+                            <li>Otimização SEO</li>
+                    <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="compraEsmerald.html" class="botaoPlanos btnPlano03">COMPRE AGORA</a></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+</section>
+<div class="clearBoth"></div>
+
+<div class="footer">
+    <h3 style="margin:0px;"class="textFooter">&copy; Todos os direitos reservados -<span style="color:#2765c8"> Make It Soft</span></h3>
+</div>
+</div>
+
+
+
+<!-- body content here -->
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+<script src="css/css3-animate-it.js"></script>
+</body>
+</html>

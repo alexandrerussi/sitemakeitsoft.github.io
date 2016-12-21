@@ -1,0 +1,1040 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans); /*font-family: 'Open Sans', sans-serif;*/
+
+::selection {
+  background: #2765c8;
+  color:#fff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #2765c8;
+  color:#fff; /* Gecko Browsers */
+}
+
+
+html {
+    overflow-x: hidden;
+  }
+
+body {
+    font-family: Raleway;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color:rgba(10,10,10,.9);
+}
+ 
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#2765c8;
+    transition: all 0.5s;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background-color:#1f54aa;
+    transition: all 0.5s;
+}
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-family: "Roboto Slab", serif;
+    font-size: 30px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+    section.module p:last-child {
+        margin-bottom: 0;
+    }
+
+section.module.content {
+    padding: 20px 0px 70px 0px;
+}
+
+section.module.parallax {
+    height: 775px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallaxFoot {
+    height: 280px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+    section.module.parallax h1 {
+        color: #fff;
+        font-size: 48px;
+
+        font-family: Raleway;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+section.module.parallax-1 {
+    background-image: url("../img/fundobg1.jpg");
+}
+
+section.module.parallax-2 {
+    background-image: url("../img/fundobg.jpg");
+}
+
+section.module.parallax-3 {
+    background-image: url("../img/footer-bg.jpg");
+}
+
+section.module.parallax-4 {
+    background-image: url("../img/bgPlanos.jpg");
+}
+
+@media all and (min-width: 600px) {
+    section.module h2 {
+        font-size: 42px;
+    }
+
+    section.module p {
+        font-size: 20px;
+    }
+
+    section.module.parallax h1 {
+        font-size: 96px;
+    }
+}
+
+@media all and (min-width: 960px) {
+    section.module.parallax h1 {
+        font-size: 160px;
+    }
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.125em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+.centroHeader {
+    width: 62.5em;
+    margin: 0 auto;
+}
+
+.textoHeader {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-family: Raleway;
+    margin-top: -100px;
+    font-weight: 400;
+}
+
+.botaoHeader {
+    font-family: Raleway;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all .3s;
+    font-weight: 600;
+}
+
+.botaoPlanosCompra{
+	text-align: center;  
+	font-family: Raleway;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all .3s;
+    font-weight: 600;
+	margin-right:10px;
+}
+
+.botaoGold:hover{
+	border-color:#fbbc05;
+	background-color:#fbbc05;
+}
+
+.botaoGold:focus{
+	border-color:#fbbc05;
+	background-color:#fbbc05;
+}
+
+.botaoPlatinum:hover{
+	border-color:#4285f4;
+	background-color:#4285f4;
+}
+
+.botaoPlatinum:focus{
+	border-color:#4285f4;
+	background-color:#4285f4;
+}
+
+.botaoRuby:hover{
+	border-color:#ea4335;
+	background-color:#ea4335;
+}
+
+.botaoRuby:focus{
+	border-color:#ea4335;
+	background-color:#ea4335;
+}
+
+.botaoEsmerald:hover{
+	border-color:#34a853;
+	background-color:#34a853;
+}
+
+.botaoEsmerald:focus{
+	border-color:#34a853;
+	background-color:#34a853;
+}
+
+    .botaoHeader:hover {
+        background: #2765c8;
+        border: 2px solid #2765c8;
+        transition: all .3s;
+    }
+
+/*EDITANDO O MENU PRINCIPAL*/
+.centroMenu {
+    width: 71.25em;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(10,10,10,.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    transition: background 1s;
+    padding: 10px 40px;
+}
+
+.menu ul {
+    height: 2em;
+    color: #fff;
+    transition: all .2s;
+    font-family: Raleway;
+    font-weight: 300;
+    padding: 8px 0px;
+    font-size: 15px;
+    margin-top: 13px;
+    float: right;
+    word-spacing: 5px;
+}
+
+    .menu ul li {
+        display: inline;
+        padding: 5px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: .3s;
+            padding: 27px 0px;
+        }
+
+
+            .menu ul li a:hover {
+                color: #2765c8;
+                border-bottom: 4px solid #2765c8;
+                transition: all .2s;
+                padding: 27px 0px;
+            }
+
+#imgMenu {
+    width: 4.375em;
+    height: 3.375em;
+    float: left;
+    margin-top: 5px;
+}
+
+.menuEdit {
+    height: 5em;
+    background: #fff;
+    box-shadow: 0px 6px 25px -2px rgba(0,0,0,0.2);
+}
+
+    .menuEdit ul {
+        margin: 1.7em;
+    }
+
+    .menuEdit .right li {
+        display: inline;
+        margin: 16px;
+    }
+
+    .menuEdit .right a {
+        color: #333;
+        transition: all .2s;
+        font-family: Raleway;
+        font-weight: bold;
+        padding: 27px 0px;
+        font-size: 15px;
+    }
+
+        .menuEdit .right a:hover {
+            color: #2765c8;
+            border-bottom: 4px solid #2765c8;
+            transition: all .2s;
+            padding: 27px 0px;
+        }
+
+.centro {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.resp_centro {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.clearBoth {
+    clear: both;
+}
+
+.titlePags {
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 5.25em;
+}
+
+.divTextoTitles {
+    color: #404040;
+    line-height: 40px;
+    margin: 0;
+    margin-left: 360px;
+    padding-top: 130px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 0.2px;
+}
+
+.textoTitle {
+    font-family: Raleway;
+    font-weight: 300;
+    font-size: 1.375em;
+}
+
+.azul {
+    color: #2765c8;
+}
+
+.sobreNos {
+    width:100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.respNos{
+	float:right;
+	width:600px;
+	margin-top:-50px;
+}
+
+    .sobreNos img {
+        width: 500px;
+        height: 300px;
+        float: left;
+        margin-top: -41px;
+    }
+
+.titleSobreNos {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 1.75em;
+}
+
+.subTitleSober {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 0.9375rem;
+    color: #545454;
+    margin-top: 15px;
+}
+
+.textoSobre {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: #545454;
+    margin-top: 15px;
+	text-align:justify;
+}
+
+
+/*Deixar o background color cinza*/
+.backCinza {
+    background: #f1f2f7;
+}
+
+/*Colocando Pattern*/
+.pattern {
+    background-color: rgba(0,0,0,.5);
+    background-image: url(../img/pattern.png);
+    height: 775px;
+}
+
+.patternFoot {
+    background-color: rgba(0,0,0,.5);
+    background-image: url(../img/pattern.png);
+    height: 280px;    min-height: 270px;    
+}
+/*Parte do pattern titulo*/
+.titlePatern {
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 2.1875em;
+    color: #fff;
+    text-align: center;
+    line-height: 250px;
+}
+
+.textoPattern {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 0.9375em;
+    color: #fff;
+    text-align: center;
+    margin-top: -40px;
+}
+
+/*Blocos serivços*/
+.servicos {
+    margin-top: 40px;
+    list-style: none;
+}
+
+    .servicos li:hover .titleBloco, .servicos li:hover .textBloco {
+        transition: all .2s linear;
+        color: #fff;
+    }
+
+.bloco {
+    width: 285px;
+    height: 16.5em;
+    float: left;
+    transition: all .3s linear;
+    text-align: center;
+	background-size:100%;
+}
+
+
+/*CADA BLOCO HOVER E IMAGEM*/
+.designing {
+    background-image: url(../img/icons/designing.png);
+}
+
+    .designing:hover {
+        background-image: url(../img/icons/designingHover.png);
+    }
+
+.developing {
+    background-image: url(../img/icons/developing.png);
+}
+
+    .developing:hover {
+        background-image: url(../img/icons/developingHover.png);
+    }
+
+.marketing {
+    background-image: url(../img/icons/marketing.png);
+}
+
+    .marketing:hover {
+        background-image: url(../img/icons/marketingHover.png);
+    }
+
+.branding {
+    background-image: url(../img/icons/branding.png);
+}
+
+    .branding:hover {
+        background-image: url(../img/icons/brandingHover.png);
+    }
+
+.analytics {
+    background-image: url(../img/icons/analytics.png);
+}
+
+    .analytics:hover {
+        background-image: url(../img/icons/analyticsHover.png);
+    }
+
+.mobile {
+    background-image: url(../img/icons/mobile.png);
+}
+
+    .mobile:hover {
+        background-image: url(../img/icons/mobileHover.png);
+    }
+
+.e-commerce {
+    background-image: url(../img/icons/e_commerce.png);
+}
+
+    .e-commerce:hover {
+        background-image: url(../img/icons/e_commerceHover.png);
+    }
+
+.support {
+    background-image: url(../img/icons/support.png);
+}
+
+    .support:hover {
+        background-image: url(../img/icons/supportHover.png);
+    }
+/*FIM BLOCO HOVER*/
+
+.bloco:hover {
+    transition: all .3s linear;
+}
+
+.branco {
+    background-color: #f7f7f7;
+}
+
+.cinza {
+    background-color: #f2f2f2;
+}
+
+.titleBloco {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2b2b2b;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.textBloco {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 300;
+    color: #2b2b2b;
+    text-align: center;
+    margin: 20px;
+}
+
+
+/*PREÇOS DOS PACOTES*/
+.titlePacote {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2b2b2b;
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+	width: 100%;
+}
+
+.planos {
+	width:75%;
+}
+
+.gold{
+	color:#fbbc05;
+}
+
+.platinum{
+	color:#4285f4;
+}
+
+.ruby{
+	color:#ea4335;
+}
+
+.esmerald{
+	color:#34a853;
+}
+
+.resp_planos{
+	width:100%;
+	margin:0 auto;
+}
+
+.infoPlanos{
+width:55%;
+float:left;
+text-align:left;
+}
+
+.resp_infoPlanos{
+width:75%;
+text-align:center;
+margin:0 auto;
+}
+
+
+.caixaPlano {
+    width:262.188px;
+    height: 28.75em;
+    float: left;
+    transition: all .3s linear;
+    text-align: center;
+    margin: 11.4px;
+}
+
+.caixaPlanos {
+    width:40%;
+    height: 28.75em;
+    transition: all .3s linear;
+    text-align: center;
+    margin: 11.4px;
+	margin-top:50px;
+	float:right;
+}
+
+.resp_caixaPlanos {
+    width:75%;
+    height: 28.75em;
+    transition: all .3s linear;
+    text-align: center;
+    margin: 11.4px;
+    margin-top:50px;
+    margin:0 auto;
+}
+
+.plano01P {
+    background-color: #fbbc05;
+    width: 262.188px;
+    height: 42%;    
+}
+
+.plano01Ps {
+    background-color: #fbbc05;
+    width:100%;
+    height: 42%;    
+}
+
+.plano02P {
+    background-color: #4285f4;
+    width: 262.188px;
+    height: 42%;
+}
+
+.plano02Ps {
+    background-color: #4285f4;
+    width:100%;
+    height: 42%;
+}
+
+.plano03P {
+    background-color: #34a853;
+    width: 262.188px;
+    height: 42%;
+}
+
+.plano03Ps {
+    background-color: #34a853;
+    width:100%;
+    height: 42%;
+}
+
+.plano04P {
+    background-color: #ea4335;
+    width: 262.188px;
+    height: 42%;
+}
+
+.plano04Ps {
+    background-color: #ea4335;
+    width:100%;
+    height: 42%;
+}
+
+.respPlanos{
+	width:71.25%;
+}
+
+.titlePlano {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+	width: 262.188px;
+}
+
+.titlePlanos {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+	width:100%;
+}
+
+.precoPlano {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-top: -12.5px;
+	
+}
+
+.precoPlanos {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    margin-top: -12.5px;
+	
+}
+
+.moeda {
+    position: absolute;
+    left: -20px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.preco {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 62px;
+    padding-right: 25px;
+}
+
+.precoDecimal {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.duracao {
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.linhaBonia {
+    border-bottom: 1px solid #fff;
+    margin: 20px 35px;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+
+/*CONFIGURANDO LISTA PARA PLANOS TO EDITANDO OS BOTAOS EOQ PARCÇA*/
+.listaP {
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ddd;
+	margin-bottom:50px;  
+	
+}
+
+    .listaP li {
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 17px;
+        margin-top: 15px; 
+    }
+
+.botaoPlanos {
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px;
+    background: transparent;
+    transition: all .3s;
+    color: #262626;
+}
+
+
+    .botaoPlanos:hover {
+        transition: all .3s;
+        color: #fff;
+    }
+
+.btnPlano01 {
+    background: transparent;
+    border: 2px solid #fbbc05;
+}
+
+    .btnPlano01:hover {
+        background: #fbbc05;
+        border: 2px solid #fbbc05;
+    }
+
+.btnPlano02 {
+    background: transparent;
+    border: 2px solid #4285f4;
+}
+
+    .btnPlano02:hover {
+        background: #4285f4;
+        border: 2px solid #4285f4;
+    }
+
+.btnPlano03 {
+    background: transparent;
+    border: 2px solid #34a853;
+}
+
+    .btnPlano03:hover {
+        background: #34a853;
+        border: 2px solid #34a853;
+    }
+
+.btnPlano04 {
+    background: transparent;
+    border: 2px solid #ea4335;
+}
+
+    .btnPlano04:hover {
+        background: #ea4335;
+        border: 2px solid #ea4335;
+    }
+
+
+
+
+/*FIM LISTA PLANOS*/
+
+
+/*PARTE DE NOSSOS TRABALHOOS PORTFOLIO*/
+
+.boxTrab{
+    width: 23%;
+    height: 11.625em;
+    float: left;
+    transition: all .3s;
+    text-align: center;
+    margin: 11.4px;
+    background-color: #900;
+}
+
+.boxTrab:hover{    
+    transition: all .3s;
+    background-image: url(../img/boxHoverTrab.png);    
+}
+
+/*FIM NOSSOS TRABALHOS*/
+
+/*FORMULARIO CONTATO HOME*/
+
+.formulario{
+    margin-top: 30px;
+}
+
+.esquerdaForm{
+    width:50%;
+    float:left;
+    padding: 0px 15px 0px 0px;
+}
+
+.direitaForm{
+    width:50%;
+    float:right;
+    padding: 0px 0px 0px 15px;
+}
+
+.formulario input{
+    height: 50px;
+    width: 100%;
+    margin: 0 0 20px 0; 
+}
+
+.formulario input:focus{
+    background-color:#fff;
+    border: 1px solid #2765c8;
+}
+
+.botaoForm{
+    background-color: transparent;
+    border: 1px solid #2765c8;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    transition: all .3s;
+}
+
+.botaoForm:hover{
+    background-color: #2765c8;    
+    color: #fff;
+    transition: all .3s;
+}
+
+.formulario textarea{
+    max-height: 118px;
+    min-height: 118px;
+    margin: 0 0 20px 0;
+    border: 1px solid #e6e6e6;
+}
+
+.formulario textarea:focus{
+    background-color:#fff;
+    border: 1px solid #2765c8;
+}
+
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;  
+}
+
+:-ms-input-placeholder {  
+   color: #999;  
+}
+
+/*FIM FORMULARIO*/
+
+/*FINALIZANDO*/
+.boxMeiosContato{
+    width: 23%;
+    height: 12.8125em;
+    float: left;
+    transition: all .3s linear;
+    text-align: center;
+    margin: 11.4px;
+}
+
+.meio01 {      
+    height: 42%;
+    text-align: center;
+}
+
+.meio02 {
+    background-color: #4285f4;
+    width: 100%;
+    height: 42%;
+}
+
+.meio03 {
+    background-color: #34a853;
+    width: 100%;
+    height: 42%;
+}
+
+.meio04 {
+    background-color: #ea4335;
+    width: 100%;
+    height: 42%;
+}
+
+.titleMeios{
+    font-family: Raleway;
+    font-size: 1.1875em;
+    font-weight: 800;
+    color: #545454;
+    margin-top:-20px;
+}
+
+.textMeios{
+    font-family: Raleway;
+    font-size: 0.9375em;    
+    color: #666;
+    margin-top: 20px;
+}
+
+/*RODAPÉ*/
+.footer{
+    height: 120px;
+    text-align: center;
+    background-color: #2b2b2b;
+}
+
+.textFooter{
+    font-family: Raleway;
+    font-size: 1em;
+    font-weight:600;
+    color: #eee;
+    line-height: 120px;
+}
+
+.iconsFooter{    
+    list-style: none;    
+    text-align: center;
+}
+
+.twitter{
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-image: url(../img/footer/twitter.png);
+}
+
+.facebook{
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-image: url(../img/footer/facebook.png);
+}
+
+.linkedin{
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-image: url(../img/footer/linkedin.png);
+}
+
+.googleMais{
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-image: url(../img/footer/google.png);
+}
+
+.youtube{
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-image: url(../img/footer/youtube.png);
+}

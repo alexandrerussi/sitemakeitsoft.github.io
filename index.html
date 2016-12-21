@@ -1,0 +1,1226 @@
+﻿<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+
+<head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <meta charset="utf-8">
+    <!-- If you delete this meta tag World War Z will become a reality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make It Soft</title>
+
+    <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <!-- If you are using the gem version, you need this only -->    
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/ihover.css" rel="stylesheet">
+    <link href="css/menulateral.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+    
+    <!--Button Scroll to top-->
+    
+    
+    <link href="css/buttonTop.css" rel="stylesheet">
+    <script src="js/buttonTop.js"></script>    
+
+    <!--Fim-->
+
+    <script type="text/javascript">
+        // <![CDATA[
+        $(document).ready(function () {
+            function filterPath(string) {
+                return string
+                .replace(/^\//, '')
+                .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+                .replace(/\/$/, '');
+            }
+            $('a[href*=#]').each(function () {
+                if (filterPath(location.pathname) == filterPath(this.pathname)
+                && location.hostname == this.hostname
+                && this.hash.replace(/#/, '')) {
+                    var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                    if ($target) {
+                        var targetOffset = $target.offset().top;
+                        $(this).click(function () {
+                            $('html, body').animate({ scrollTop: targetOffset }, 700);
+                            return false;
+                        });
+                    }
+                }
+            });
+        });
+        </script>
+
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/header.js"></script>    
+    <script src="js/erroMsg.js"></script>
+
+	<!-- ON SCROLL ANIMATIONS -->
+		<link rel="stylesheet" href="css/animations.css">    
+
+
+        <link href="portfolio/dist/css/jquery.gridder.min.css" rel="stylesheet">
+        <link href="portfolio/css/demo.css" rel="stylesheet">
+	
+</head>
+<body>
+<div class="hide-for-medium-down">
+<div class="scroll-top-wrapper ">
+    <span class="scroll-top-inner">
+        
+    </span>
+</div>
+
+    <header class="header">
+        <div class="centroMenu">
+            <a href="index.html"><img id="imgMenu" src="img/logoSemText.png" /></a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#pacotes">Planos</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+    <div class="off-canvas-wrap show-for-medium-down" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="header"></nav>
+            <a class="right-off-canvas-toggle" href="#">
+                <div class="menu">
+                    <div class="top-bar"></div>
+                    <div class="middle-bar"></div>
+                    <div class="bottom-bar"></div>
+                </div>
+            </a>
+            </nav>
+            <!-- Off Canvas Menu -->
+            <aside class="right-off-canvas-menu">
+                <!-- whatever you want goes here -->
+                <ul class="side-nav main">
+                    <li><a class="is-active" href="#home">home</a></li>
+                    <li><a href="#sobre">sobre</a></li>
+                    <li><a href="#equipe">equipe</a></li>
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#pacotes">planos</a></li>
+                    <li><a href="#portfolio">portfólio</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+                <ul class="inline-list social">
+                    <li><i class="fi-social-facebook"></i></li>
+                    <li><i class="fi-social-youtube"></i></li>
+                    <li><i class="fi-social-twitter"></i></li>
+                </ul>
+            </aside>
+            <section class="hero">
+                <a name="home"></a>
+                <div class="show-for-small-up">
+                    <section class="module parallax parallax-1">
+                        <div class="pattern">
+                            <div class="container" style="width: 600px; margin: 0 auto;">
+                                <h1 style="font-size: 80px;margin:0; line-height: 200px">Make it <span style="color: #2765c8; ">Soft</span></h1>
+                                <h3 class="textoHeader" style="margin-top: 10px;"><i>"O Design gera inovação, a inovação reforça a marca, a marca constrói fidelidade e a fidelidade sustenta os lucros." - Marty Neumeier</i></h3>
+                                <p style="text-align: center;margin-top: 50px;"><a href="compra.html" class="button btn btn-1 btn-1e botaoHeader">COMPRE AGORA</a></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </section>
+            <!-- main content goes here -->
+            <!-- close the off-canvas menu -->
+            <a class="exit-off-canvas"></a>
+
+        </div>
+    </div>
+
+    <a name="home"></a>
+    <div class="show-for-small-up hide-for-medium-down">
+        <section class="module parallax parallax-1">
+            <div class="pattern">
+                <div class="container centroHeader animatedParent animateOnce">
+                    <h1 class="hide-for-medium-down animated bounceInDown" style="font-size: 80px;margin:0;">Make it <span style="color: #2765c8; ">Soft</span></h1>
+                    <h3 class="textoHeader"><i>"O Design gera inovação, a inovação reforça a marca, a marca constrói fidelidade e a fidelidade sustenta os lucros." - Marty Neumeier</i></h3>
+                    <p style="text-align: center;margin-top: 50px;"><a href="compra.html" class="button btn btn-1 btn-1e botaoHeader">COMPRE AGORA</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+
+    <div class="clearBoth"></div>
+
+    <a name="sobre"></a>
+    <section class="module content">
+        <div class="centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">SOBRE</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">NÓS</h3>
+            </div>
+
+            <div class="divTextoTitles">
+                <h3 class="textoTitle">Somos uma empresa de web development, desenvolvimento de aplicativos e programas desktop. Desenvolvemos todo tipo de website e aplicativos para todo tipo de pessoa física e jurídica.</h3>
+            </div>
+
+
+        <div class="clearBoth"></div>
+        <div class="sobreNos">
+
+            <img src="img/logo.png" />
+
+            <h3 class="titleSobreNos">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+            <h3 class="subTitleSober">"A imaginação é mais importante que o conhecimento." - Albert Einstein</h3>
+            <h4 class="textoSobre"> A empresa make it soft fornece para nossos clientes os melhores sites e aplicativos com um design atraente e satisfatório o que torna seu projeto acessável pelo maior número de usuários possíveis. Nossa equipe é composta por 5 profissionais qualificados nas melhores faculdades de tecnologia.Nós, juntos com nossos clientes, desenvolvemos um design satisfatório para ambos os lados. Também oferecemos consultoria de marketing web, onde daremos o caminho para seu site ter um bom retorno do usuário.</h4>
+        </div>
+        <div class="clearBoth"></div>
+    </section>
+
+    <a name="equipe"></a>
+    <section class="module content backCinza">
+        <div class="centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">NOSSA</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">EQUIPE</h3>
+            </div>
+
+            <div class="divTextoTitles">
+                <h3 class="textoTitle">Somos compostos por 5 integrantes. Nós juntos com os clientes desenvolvemos um design satisfatório para ambos os lados com certeza atrativo ao usuário.</h3>
+            </div>
+
+
+        </div>
+        <div class="clearBoth"></div>
+
+        <ul class="grid cs-style-4">
+	<li>
+		<figure>
+			<img src="img/eqVini.jpg" alt="img01">
+			<figcaption>
+				<h3>Vinicius</h3>
+				<br/>
+				<span>Webdesigner , marketing , técnico em Segurança e redes de computadores.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqAle.jpg" alt="img02">
+			<figcaption>
+				<h3>Alexandre</h3>
+				<br/>
+				<span>Web developer, Progamador, Designer e Analista de sistemas.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqLeo.jpg" alt="img03">
+			<figcaption>
+				<h3>Leonardo</h3>
+				<br/>
+				<span>Web developer, Progamador e Publicitário e Analista de e-Commerce.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqVick.jpg" alt="img04">
+			<figcaption>
+				<h3>Victória</h3>
+				<br/>
+				<span>Programadora de aplicativos android, Designer e Programadora de sistemas.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqRossi.jpg" alt="img05">
+			<figcaption>
+				<h3>Barbara</h3>
+				<br/>
+				<span>Programadora, Analista de sistemas e Publicitaria.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<!-- ... -->
+</ul>
+
+<!--ANTIGO BACKUP:
+        <ul class="ch-grid">
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-1"></div>
+                        <div class="ch-info-back">
+                            <h3>Victória</h3>
+                            <p>Web developer, Progamador, Designer, Publicitário e Analista de e-Commerce</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-2"></div>
+                        <div class="ch-info-back">
+                            <h3>Barbara</h3>
+                            <p>Web developer, Progamador, Designer, Publicitário e Analista de e-Commerce</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="ch-grid">
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-3"></div>
+                        <div class="ch-info-back">
+                            <h3>Vinicius</h3>
+                            <p>Web developer, Progamador, Designer, Publicitário e Analista de e-Commerce</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-4"></div>
+                        <div class="ch-info-back">
+                            <h3>Alexandre</h3>
+                            <p>Web developer, Progamador, Designer, Publicitário e Analista de e-Commerce </a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="ch-item">
+                    <div class="ch-info">
+                        <div class="ch-info-front ch-img-5"></div>
+                        <div class="ch-info-back">
+                            <h3>Leonardo</h3>
+                            <p>Web developer, Progamador, Designer, Publicitário e Analista de e-Commerce</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>-->
+    </section>    
+
+    <a name="servicos"></a>
+    <section class="module content">
+        <div class="centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">O QUE</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">FAZEMOS</h3>
+            </div>
+
+            <div class="divTextoTitles" style="margin-left: 400px">
+                <h3 style="margin-top: 33px;"class="textoTitle">Esses são os métodos que utilizamos nos projetos, para que fique um trabalho organizado e bem sucedido:</h3>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+        <ul class="servicos centro">
+            <li class="bloco branco designing">
+                <h3 class="titleBloco">Designing</h3>
+                <h3 class="textBloco">O design é a parte mais importante do seu projeto para que chame publico para o mesmo.</h3>
+            </li>
+            <li class="bloco cinza developing">
+                <h3 class="titleBloco">Desenvolvimento</h3>
+                <h3 class="textBloco">Procuramos programar seu projeto de forma mais leve possível para uma melhor visualização do usuário.</h3>
+            </li>
+            <li class="bloco branco marketing">
+                <h3 class="titleBloco arketing">Marketing</h3>
+                <h3 class="textBloco">A área de marketing é importante para o setor de vendas.</h3>
+            </li>
+            <li class="bloco cinza branding">
+                <h3 class="titleBloco">Marca</h3>
+                <h3 class="textBloco">A marca de seu site é importante para a divulgação do mesmo então a fazemos mais atrativa possivel.</h3>
+            </li>
+            <li class="bloco cinza analytics">
+                <h3 class="titleBloco">Análise</h3>
+                <h3 class="textBloco">A parte de análise garante que seu projeto esteja sempre funcional.</h3>
+            </li>
+            <li class="bloco branco mobile">
+                <h3 class="titleBloco">Mobile Apps</h3>
+                <h3 class="textBloco">Para facilitar a acessibilidade do usuário</h3>
+            </li>
+            <li class="bloco cinza e-commerce">
+                <h3 class="titleBloco">e-Commerce</h3>
+                <h3 class="textBloco">Navegação e usabilidade da loja voltados para o aumento de conversão de vendas do seu e-commerce</h3>
+            </li>
+            <li class="bloco branco support">
+                <h3 class="titleBloco">Suporte</h3>
+                <h3 class="textBloco">Nosso suporte manterá seu site seguro e sempre no ar.</h3>
+            </li>
+        </ul>
+    </section>
+    <div class="clearBoth"></div>
+
+    <a name="pacotes"></a>
+    <section class="module content backCinza" style="margin-top:70px; width:100%;">
+        <div class="centro container">
+            <div class="center">
+                <h3 class="titlePacote">Preço dos Planos</h3>
+            </div> 
+            <div id="respPlanos">
+                <div class="caixaPlano plano01 animatedParent animateOnce">
+                    <div class="plano01P animated bounceInDown">
+                        <h3 class="titlePlano animated bounceInDown">Gold</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">2000</span>
+                            <span class="precoDecimal animated bounceInDown">.99</span>
+                            <span class="duracao animated bounceInDown">/1 mês</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">3 páginas</li>
+                        <li class="animated bounceInDown">Logotipo</li>
+                        <li class="animated bounceInDown">Layout de site</li>
+                        <li class="animated bounceInDown">Consultoria de marca</li>
+                        <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="planos.html#gold" class="botaoPlanos animated bounceInDown btnPlano01">VEJA MAIS</a></p>
+                    </ul>
+
+                </div>
+                <div class="caixaPlano plano01 animatedParent animateOnce">
+                    <div class="plano02P animated bounceInDown">
+                        <h3 class="titlePlano animated bounceInDown">Platinum</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">2500</span>
+                            <span class="precoDecimal animated bounceInDown">.00</span>
+                            <span class="duracao animated bounceInDown">/3 mês</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">10 páginas</li>
+                        <li class="animated bounceInDown">Logotipo</li>
+                        <li class="animated bounceInDown">Layout de site</li>
+                        <li class="animated bounceInDown">Criação de aplicativo</li>
+                        <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="planos.html#platinum" class="botaoPlanos animated bounceInDown btnPlano02">VEJA MAIS</a></p>
+                    </ul>
+                </div>
+
+                <div class="caixaPlano plano01 animatedParent animateOnce">
+                    <div class="plano04P animated bounceInDown">
+                        <h3 class="titlePlano animated bounceInDown">Ruby</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">3250</span>
+                            <span class="precoDecimal animated bounceInDown">.00</span>
+                            <span class="duracao animated bounceInDown">/6 mês</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">Sem limite de páginas</li>
+                        <li class="animated bounceInDown">Logotipo</li>
+                        <li class="animated bounceInDown">Layout</li>
+                        <li class="animated bounceInDown">6 meses de suporte</li>
+                        <p style="text-align: center;margin-top:25px; margin-bottom:45px;"><a href="planos.html#ruby" class="botaoPlanos btnPlano04 animated bounceInDown">VEJA MAIS</a></p>
+                    </ul>
+
+                </div>
+                <div class="caixaPlano plano01 animatedParent animateOnce">
+                    <div class="plano03P animated bounceInDown">
+                        <h3 class="titlePlano animated bounceInDown">Emerald</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">5000</span>
+                            <span class="precoDecimal animated bounceInDown">.00</span>
+                            <span class="duracao animated bounceInDown">/1 ano</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">Sem limite de páginas</li>
+                        <li class="animated bounceInDown">1 ano de suporte</li>
+                        <li class="animated bounceInDown">Assistência de marketing</li>
+                        <li class="animated bounceInDown">Otimização SEO</li>
+                        <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="planos.html#esmerald" class="botaoPlanos btnPlano03 animated bounceInDown">VEJA MAIS</a></p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+
+    </section>
+    <div class="clearBoth"></div>
+
+    <a name="portfolio"></a>
+    <section class="module content">
+        <div class="centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">NOSSOS</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">TRABALHOS</h3>
+            </div>
+
+            <div class="divTextoTitles" style="margin-left: 520px">
+                <h3 style="margin-top: 33px;" class="textoTitle">Como base de nossa empresa, tenha como exemplo alguns dos projetos feito por nós:</h3>
+            </div>
+            <div class="container">
+            
+        </div>
+<div class="clearBoth"></div>
+        <div class="container">
+            
+            <ul class="gridder">
+                <li class="gridder-list" data-griddercontent="#gridder-content-1">
+                    <img src="img/portfolio/peq01.jpg" style="width:250px; transition: .3s;"class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list"  data-griddercontent="#gridder-content-2">
+                    <img src="img/portfolio/peq02.jpg" style="width:250px; transition: .3s;" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-3">
+                    <img src="img/portfolio/peq03.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-4">
+                    <img src="img/portfolio/peq04.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-5">
+                    <img src="img/portfolio/peq05.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-6">
+                    <img src="img/portfolio/peq06.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-7">
+                    <img src="img/portfolio/peq07.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-8">
+                    <img src="img/portfolio/peq08.jpg" style="width:250px" class="img-responsive" />
+                </li>
+            </ul>
+
+
+            <div id="gridder-content-1" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande01.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>Rabbit Webstudio</h3>
+                        <p style="font-size: 18px;">Este foi um dos nossos últimos projetos onde desenvolvemos um site responsivo, e para seu melhor desempenho, fizemos ele no formato de OnePage deixando o carregamento do conteúdo do site mais rápido. Utilizamos cores atrativas para deixar um visual agradável ao usuário, efeitos parallax para facilitar a navegação, HTML5 , CSS3 e JavaScript</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+            <div id="gridder-content-2" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande02.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>Shopping Center 3</h3>
+                        <p style="font-size: 18px;">Este foi um dos primeiros projetos que fizemos, comparando-o com últimos sites que desenvolvemos, podemos ver nitidamente a evolução da nossa empresa. O site foi criado em para um shopping, que está localizado no coração de São Paulo, e por ter muito conteúdo não foi possivel a utilização do método de OnePage, pois dificultaria a acessibilidade deixando o site muito pesado. Suas cores atrativas deixam um visual clean e agradando o usuário. Nesse site foi utilizado HTML5 , CSS3 e JavaScript.</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+            <div id="gridder-content-3" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande03.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>Time Plus</h3>
+                        <p style="font-size: 18px;">Time Plus é um site e-commerce responsivo, disponível para mobile e deixando um visual agradável e acessível ao usuário. Suas combinações de cores atrativas para ressaltar determinados produtos é o ponto principal do site,  as propagandas foram posicionadas de forma que não deixe o site com um ar pesado, pois isso faz com que o usuário se sinta bem ao estar navegando pelo mesmo. Utilizamos HTML5 CSS3, Javascript, efeito parallax e JQuery</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+            <div id="gridder-content-4" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande04.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>Avoir</h3>
+                        <p style="font-size: 18px;">Avoir é um site em formato de blog responsivo, ou seja, você pode acessá-lo por qualquer dispositivo, sem se preocupar com o tamanho do site. O site tem um visual que chama a atenção do usuário com combinações de cores que deixam o site atrativo para quem esta olhando. Este também não é OnePage, por causa da quantidade de conteúdo presente nele, assim evitamos de deixar o site pesado e desagradável ao leitor. Utilizamos HTML5, CSS3, JavaScript, efeito PARALLAX e JQuery.</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+            <div id="gridder-content-5" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande05.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>Five Webdesign</h3>
+                        <p style="font-size: 18px;">Five é um site responsivo e disponível para mobile, com um visual atrativo com o objetivo de entreter o usuário, as cores utilizadas são combinadas de forma leve que facilita a leitura de seu conteúdo. O menu lateral facilita a navegação pelo site que é OnePage. Utilizamos HTML5, CSS3, JavaScript, efeito PARALLAX e JQuery.</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+            <div id="gridder-content-6" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande06.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>Urban Acessórios</h3>
+                        <p style="font-size: 18px;"> Urban accessories é um site e-commerce responsivo e disponível para mobile onde seu padrão de cor deixa o site com um visual agradável ao usuário, suas combinações de cores mais atrativas ressaltam determinados produto. Mesmo o site sendo OnePage seu conteúdo é bem organizado o que deixa o site mais atrativo ao usuário. Utilizamos HTML5, CSS3, JavaScript, efeito PARALLAX e JQuery</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div> 
+            <div id="gridder-content-7" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande07.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>NeoMag Blog</h3>
+                        <p style="font-size: 18px;">NeoMag é um site responsivo e disponível para mobile onde seu design é bem organizado com padrões de quadriláteros, suas cores são atrativas ao usuário. O site não é OnePage por motivos de conteúdo, pois ficaria muito pesado e desagradável ao usuário, suas fontes são médias/grandes o que facilita a leitura deixando um ambiente bem agradável ao leitor. Neste site utilizamos HTML5, CSS3, JavaScript, efeito PARALLAX e JQuery.</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+            <div id="gridder-content-8" class="gridder-content">
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <img src="img/portfolio/grande08.jpg" style="float:left;" class="img-responsive" />
+                    </div>
+                    <div class="col-sm-6" style="margin-left: 620px; text-align: justify;">
+                        <h3>Transcargo</h3>
+                        <p style="font-size: 18px;">Transcargo é um site de transporte responsivel onde seu design é bem simples , portanto suas cores o deixa atrativo e bonito , fazendo com que o usuário se sinta bem ao navegar pelo mesmo.O site não é OnePage por motivos de conteúdo muito extenso e as linguagens necessárias para seu desenvolvimento foi HTML5,CSS3,JAVASCRIPT,PARALLAX e JQUERY.</p>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+            </div>
+          
+
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="portfolio/dist/js/jquery.gridder.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+
+                // Call Gridder
+                $(".gridder").gridderExpander({
+                    scrollOffset: 60,
+                    scrollTo: "panel", // "panel" or "listitem"
+                    animationSpeed: 400,
+                    animationEasing: "easeInOutExpo",
+                    onStart: function () {
+                        console.log("Gridder Inititialized");
+                    },
+                    onExpanded: function (object) {
+                        console.log("Gridder Expanded");
+                        $(".carousel").carousel();
+                    },
+                    onChanged: function (object) {
+                        console.log("Gridder Changed");
+                    },
+                    onClosed: function () {
+                        console.log("Gridder Closed");
+                    }
+                });
+            });
+        </script>
+        </div>
+    </section>
+    <div class="clearBoth"></div>
+
+    <section class="module parallax parallax-2" style="margin-top:40px;">
+        <div class="container">
+            <div class="pattern">
+                <div class="centro animatedParent animateOnce" style="width: 1000px">
+                    <h3 class="titlePatern">AQUI SUA SATISFAÇÃO É GARANTIDA</h3>
+                    <h3 class="textoPattern">“Tente uma, duas, três vezes e se possível tente a quarta, a quinta e quantas vezes for necessário. Só não desista nas primeiras tentativas, a persistência é amiga da conquista. Se você quer chegar a onde a maioria não chega, faça o que a maioria não faz.” - Bill Gates</h3>
+                    <p style="text-align: center;margin-top: 50px;"><a href="compra.html" class="button btn btn-1 btn-1e botaoHeader">COMPRE AGORA</a></p>
+                    <img class="animated bounceInDown" style="margin-top: 49px;" src="img/telasPPatern.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="contato"></a>
+    <section class="module content">
+        <div class="centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">ENTRE EM</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">CONTATO</h3>
+            </div>
+
+            <div class="divTextoTitles" style="margin-left: 440px">
+                <h3 style="margin-top: 33px;" class="textoTitle">No caso de alguma dúvida, critica, sugestão. Entre em contato conosco.</h3>
+            </div>
+            <div class="clearBoth"></div>
+
+            <div class="formulario">
+                <div class="esquerdaForm">
+                    <input id="nome" type="text" class="bordaForm" placeholder="Seu Nome"/>
+                    <input id="email" type="text" class="bordaForm" placeholder="Seu Email" />
+                    <input id="assunto" type="text" class="bordaForm" placeholder="Assunto" />
+                </div>
+                <div class="direitaForm">
+                    <textarea id="mensagem" rows="2" cols="20" placeholder="Sua mensagem..."></textarea>
+                    <input onclick="erroMsg()" id="btnEnviar" class="botaoForm" type="button" value="ENVIE A MENSAGEM" />
+                </div>
+            </div>
+            <div class="clearBoth"></div>
+
+        </div>
+    </section>
+    <div class="clearBoth"></div>
+
+    <section class="module content backCinza">
+        <div class="centro container">
+            <div class="center">
+                <h3 class="titlePacote">Meios de Contato</h3>
+            </div>
+
+            <div class="meiosContato" style="margin-top: 40px;">
+                <div class="boxMeiosContato plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/localizacao.png" /></p>
+                        <h1 class="titleMeios">Endereço</h1>
+                        <h3 class="textMeios">Avenida Lins de Vasconcelos, 1264</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">São Paulo - SP</h3>
+                    </div>
+                </div>
+
+                <div class="boxMeiosContato plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/email.png" /></p>
+                        <h1 class="titleMeios">Email</h1>
+                        <h3 class="textMeios">Entre em contato conosco:</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">contatomakeitsoft@gmail.com.com</h3>
+                    </div>
+                </div>
+
+                <div class="boxMeiosContato plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/telefone.png" /></p>
+                        <h1 class="titleMeios">Telefone</h1>
+                        <h3 class="textMeios">(11) 98299-8094</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">(11) 98815-5634</h3>
+                    </div>
+                </div>
+                
+                <div class="boxMeiosContato plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/skype.png" /></p>
+                        <h1 class="titleMeios">Skype</h1>
+                        <h3 class="textMeios">Nos adicione:</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">contatoMakeitsoft</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+
+    </section>
+    <div class="clearBoth"></div>
+    <div class="overlay" onClick="style.pointerEvents='none'"></div>
+  <iframe src="https://maps.google.com/maps?hl=en&q=Av. Lins de Vasconcelos, 1264&ie=UTF8&t=roadmap&z=16&iwloc=B&output=embed" width="100%" height="500"></iframe>
+  <!--
+    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="500" src="https://maps.google.com/maps?hl=en&q=Avenida Paulista, 2000&ie=UTF8&t=m&z=17&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://1minutereview.org/">check this website</a></small></div></iframe>    -->
+    
+    <section class="module parallaxFoot parallax-3" style="margin-top:-10px;">
+        <div class="container">
+            <div class="patternFoot">
+                <div class="centro">
+                    <div class="iconsFooter">
+                        <a href="https://twitter.com/webmakeitsoft" target="_blanck"><div style="margin-right:8px;" class="twitter"></div></a>
+                        <a href="https://www.facebook.com/makeitsoft" target="_blanck"><div style="margin-right:8px;" class="facebook"></div></a>
+                        <a href="https://www.linkedin.com/profile/view?id=AAMAABsbIWsB1ldaWAdhak2FN7f2iwbMliQD2R8&trk=hp-identity-name" target="_blanck"><div style="margin-right:8px;" class="linkedin"></div></a>
+                       <a href="https://plus.google.com/u/0/113272510710549042929/posts" target="_blanck"> <div style="margin-right:8px;" class="googleMais"></div></a>
+                       <a href="https://www.youtube.com/channel/UCSqSwS8r3nl1BUmFSOmgCuQ" target="_blanck"> <div class="youtube"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <h3 style="margin:0px;"class="textFooter">&copy; Todos os direitos reservados -<span style="color:#2765c8"> Make It Soft</span></h3>
+    </div>
+    </div>
+
+<!--CELULAR-->
+<!--CELULAR-->
+<!--CELULAR-->
+<!--CELULAR-->
+<!--CELULAR-->
+
+<div class="show-for-medium-down">
+<div class="scroll-top-wrapper ">
+    <span class="scroll-top-inner">
+        
+    </span>
+</div>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+    <div class="off-canvas-wrap show-for-medium-down" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="header"></nav>
+            <a class="right-off-canvas-toggle" href="#">
+                <div class="menu">
+                    <div class="top-bar"></div>
+                    <div class="middle-bar"></div>
+                    <div class="bottom-bar"></div>
+                </div>
+            </a>
+            </nav>
+            <!-- Off Canvas Menu -->
+            <aside class="right-off-canvas-menu">
+                <!-- whatever you want goes here -->
+                <ul class="side-nav main">
+                    <li><a class="is-active" href="#homeresp">home</a></li>
+                    <li><a href="#sobreresp">sobre</a></li>
+                    <li><a href="#equiperesp">equipe</a></li>
+                    <li><a href="#servicosresp">serviços</a></li>
+                    <li><a href="#pacotesresp">planos</a></li>
+                    <li><a href="#portfolioresp">portfólio</a></li>
+                    <li><a href="#contatoresp">contato</a></li>
+                </ul>
+
+            </aside>
+            <section class="hero">
+                <a name="homeresp"></a>
+                <div class="show-for-small-up">
+                    <section class="module resp_parallax parallax-1">
+                        <div class="resp_pattern">
+                            <div class="container" style="width: 60%; margin: 0 auto;">
+                                <h1 style="font-size: 500%;margin-top:-20px;">Make it <span style="color: #2765c8; ">Soft</span></h1>
+                                <p style="text-align: center;margin-top: 50px;"><a href="compra.html" class="button btn btn-1 btn-1e botaoHeader">COMPRE AGORA</a></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </section>
+            <!-- main content goes here -->
+            <!-- close the off-canvas menu -->
+            <a class="exit-off-canvas"></a>
+
+        </div>
+    </div>
+
+    <a name="homeresp"></a>
+    <div class="show-for-small-up hide-for-medium-down">
+        <section class="module parallax parallax-1">
+                        <div class="pattern">
+                            <div class="container" style="width: 60%; margin: 0 auto;">
+                                <h1 style="font-size: 500%;margin:0;">Make it <span style="color: #2765c8; ">Soft</span></h1>
+                                <p style="text-align: center;margin-top: 50px;"><a href="compra.html" class="button btn btn-1 btn-1e botaoHeader">COMPRE AGORA</a></p>
+                            </div>
+                        </div>
+                    </section>
+    </div>
+    
+
+
+
+    <div class="clearBoth"></div>
+
+    <a name="sobreresp"></a>
+    <section class="module content resp">
+        <div class="container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">SOBRE</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">NÓS</h3>
+            </div>
+
+        <div class="clearBoth"></div>
+        <div class="resp_sobreNos">
+            <p style="text-align:center;">
+                <img src="img/logo.png" />
+            </p>
+            <h3 class="resp_titleSobreNos">NÓS SOMOS O MELHOR PARA VOCÊ</h3>
+            <h3 class="resp_subTitleSober">"A imaginação é mais importante que o conhecimento." - Albert Einstein</h3>
+            <h4 class="resp_textoSobre">A empresa make it soft fornece para nossos clientes os melhores sites e aplicativos com um design atraente e satisfatório o que torna seu projeto acessável pelo maior número de usuários possíveis. Nossa equipe é composta por 5 profissionais qualificados nas melhores faculdades de tecnologia.Nós, juntos com nossos clientes, desenvolvemos um design satisfatório para ambos os lados. Também oferecemos consultoria de marketing web, onde daremos o caminho para seu site ter um bom retorno do usuário.</h4>
+        </div>
+        <div class="clearBoth"></div>
+    </section>
+
+    <a name="equiperesp"></a>
+    <section class="module content backCinza">
+        <div class="resp_centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">NOSSA</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">EQUIPE</h3>
+            </div>
+
+        </div>
+        <div class="clearBoth"></div>
+
+        <ul class="grid cs-style-4">
+	<li>
+		<figure>
+			<img src="img/eqVini.jpg" alt="img01">
+			<figcaption>
+				<h3>Vinicius</h3>
+				<br/>
+				<span>Webdesigner , marketing , técnico em Segurança e redes de computadores.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqAle.jpg" alt="img02">
+			<figcaption>
+				<h3>Alexandre</h3>
+				<br/>
+				<span>Web developer, Progamador, Designer e Analista de sistemas.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqLeo.jpg" alt="img03">
+			<figcaption>
+				<h3>Leonardo</h3>
+				<br/>
+				<span>Web developer, Progamador e Publicitário e Analista de e-Commerce.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqVick.jpg" alt="img04">
+			<figcaption>
+				<h3>Victória</h3>
+				<br/>
+				<span>Programadora de aplicativos android, Designer e Programadora de sistemas.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<li>
+		<figure>
+			<img src="img/eqRossi.jpg" alt="img05">
+			<figcaption>
+				<h3>Barbara</h3>
+				<br/>
+				<span>Programadora, Analista de sistemas e Publicitaria.</span>				
+			</figcaption>
+		</figure>
+	</li>
+	<!-- ... -->
+</ul>
+    </section>    
+
+    <a name="servicosresp"></a>
+    <section class="module content">
+        <div class="resp_centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">O QUE</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">FAZEMOS</h3>
+            </div>
+
+        </div>
+        <div class="clearBoth"></div>
+        <ul class="servicos resp_centro">
+            <li class="resp_bloco branco designing">
+                <h3 class="resp_titleBloco">Designing</h3>
+                <h3 class="resp_textBloco">O design é a parte mais importante do seu projeto para que chame publico para o mesmo.</h3>
+            </li>
+            <li class="resp_bloco cinza developing">
+                <h3 class="resp_titleBloco">Desenvolvimento</h3>
+                <h3 class="resp_textBloco">Procuramos programar seu projeto de forma mais leve possível para uma melhor visualização do usuário.</h3>
+            </li>
+            <li class="resp_bloco branco marketing">
+                <h3 class="resp_titleBloco arketing">Marketing</h3>
+                <h3 class="resp_textBloco">A área de marketing é importante para o setor de vendas.</h3>
+            </li>
+            <li class="resp_bloco cinza branding">
+                <h3 class="resp_titleBloco">Marca</h3>
+                <h3 class="resp_textBloco">A marca de seu site é importante para a divulgação do mesmo então a fazemos mais atrativa possivel.</h3>
+            </li>
+            <li class="resp_bloco branco analytics">
+                <h3 class="resp_titleBloco">Análise</h3>
+                <h3 class="resp_textBloco">A parte de análise garante que seu projeto esteja sempre funcional.</h3>
+            </li>
+            <li class="resp_bloco cinza mobile">
+                <h3 class="resp_titleBloco">Mobile Apps</h3>
+                <h3 class="resp_textBloco">O publico mobile tende a ultrapassar o público desktop</h3>
+            </li>
+            <li class="resp_bloco branco e-commerce">
+                <h3 class="resp_titleBloco">e-Commerce</h3>
+                <h3 class="resp_textBloco">Navegação e usabilidade da loja voltados para o aumento de conversão de vendas do seu e-commerce</h3>
+            </li>
+            <li class="resp_bloco cinza support">
+                <h3 class="resp_titleBloco">Suporte</h3>
+                <h3 class="resp_textBloco">Nosso suporte manterá seu site seguro e sempre no ar.</h3>
+            </li>
+        </ul>
+    </section>
+    <div class="clearBoth"></div>
+
+    <a name="pacotesresp"></a>
+    <section class="module content backCinza" style="margin-top:70px; width:100%;">
+        <div class="resp_centro container">
+            <div class="center">
+                <h3 class="resp_titlePacote">Preço dos Planos</h3>
+            </div> 
+            <div id="respPlanos">
+                <div class="resp_caixaPlano resp_plano01 animatedParent animateOnce">
+                    <div class="resp_plano01P animated bounceInDown">
+                        <h3 class="resp_titlePlano animated bounceInDown">Gold</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="resp_precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">2000</span>
+                            <span class="precoDecimal animated bounceInDown">.00</span>
+                            <span class="duracao animated bounceInDown">/1 mês</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">3 páginas</li>
+                        <li class="animated bounceInDown">Logotipo</li>
+                        <li class="animated bounceInDown">Layout de site</li>
+                        <li class="animated bounceInDown">Consultoria de marca</li>
+                        <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="planos.html#goldresp" class="botaoPlanos animated bounceInDown btnPlano01">VEJA MAIS</a></p>
+                    </ul>
+
+                </div>
+                <div class="resp_caixaPlano resp_plano02 animatedParent animateOnce">
+                    <div class="resp_plano02P animated bounceInDown">
+                        <h3 class="resp_titlePlano animated bounceInDown">Platinum</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="resp_precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">2500</span>
+                            <span class="precoDecimal animated bounceInDown">.00</span>
+                            <span class="duracao animated bounceInDown">/3 mês</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">10 páginas</li>
+                        <li class="animated bounceInDown">Logotipo</li>
+                        <li class="animated bounceInDown">Layout de site</li>
+                        <li class="animated bounceInDown">Criação de aplicativo</li>
+                        <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="planos.html#platinumresp" class="botaoPlanos animated bounceInDown btnPlano02">VEJA MAIS</a></p>
+                    </ul>
+
+                </div>
+
+                <div class="resp_caixaPlano resp_plano01 animatedParent animateOnce">
+                    <div class="resp_plano04P animated bounceInDown">
+                        <h3 class="resp_titlePlano animated bounceInDown">Ruby</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="resp_precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">3250</span>
+                            <span class="precoDecimal animated bounceInDown">.00</span>
+                            <span class="duracao animated bounceInDown">/6 mês</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">Sem limite de páginas</li>
+                        <li class="animated bounceInDown">Logotipo</li>
+                        <li class="animated bounceInDown">Layout</li>
+                        <li class="animated bounceInDown">6 meses de suporte</li>
+                        <p style="text-align: center;margin-top:25px; margin-bottom:45px;"><a href="planos.html#rubyresp" class="botaoPlanos btnPlano04 animated bounceInDown">VEJA MAIS</a></p>
+                    </ul>
+
+                </div>
+                <div class="resp_caixaPlano resp_plano01 animatedParent animateOnce">
+                    <div class="resp_plano03P animated bounceInDown">
+                        <h3 class="resp_titlePlano animated bounceInDown">Emerald</h3>
+                        <p class="linhaBonia animated bounceInDown"></p>
+                        <p class="resp_precoPlano animated bounceInDown">
+                            <span class="moeda animated bounceInDown">R$</span>
+                            <span class="preco animated bounceInDown">5000</span>
+                            <span class="precoDecimal animated bounceInDown">.00</span>
+                            <span class="duracao animated bounceInDown">/1 ano</span>
+                        </p>
+                    </div>
+                    <ul class="listaP animatedParent animateOnce">
+                        <li class="animated bounceInDown">Sem limite de páginas</li>
+                        <li class="animated bounceInDown">1 ano de suporte</li>
+                        <li class="animated bounceInDown">Assistência de marketing</li>
+                        <li class="animated bounceInDown">Otimização SEO</li>
+                        <p style="text-align: center; margin-top: 25px; margin-bottom: 45px;"><a href="planos.html#esmeraldresp" class="botaoPlanos btnPlano03 animated bounceInDown">VEJA MAIS</a></p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+
+    </section>
+    <div class="clearBoth"></div>
+
+    <a name="portfolioresp"></a>
+    <section class="module content">
+        <div class="resp_centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">NOSSOS</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">TRABALHOS</h3>
+            </div>
+
+            <div class="container">
+            
+        </div>
+<div class="clearBoth"></div>
+
+        <div class="container" style="width:90%; margin:0 auto;">
+            
+            <ul class="gridderResp">
+                <li class="gridder-list" data-griddercontent="#gridder-content-1">
+                    <img src="img/portfolio/peq01.jpg" style="width:250px; transition: .3s;"class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list"  data-griddercontent="#gridder-content-2">
+                    <img src="img/portfolio/peq02.jpg" style="width:250px; transition: .3s;" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-3">
+                    <img src="img/portfolio/peq03.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-4">
+                    <img src="img/portfolio/peq04.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-5">
+                    <img src="img/portfolio/peq05.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-6">
+                    <img src="img/portfolio/peq06.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-7">
+                    <img src="img/portfolio/peq07.jpg" style="width:250px" class="img-responsive" />
+                </li><!--
+                --><li class="gridder-list" data-griddercontent="#gridder-content-8">
+                    <img src="img/portfolio/peq08.jpg" style="width:250px" class="img-responsive" />
+                </li>
+            </ul>
+            <div class="clearBoth"></div>
+        </div>
+
+        </div>
+    </section>
+    <div class="clearBoth"></div>
+
+    <a name="contatoresp"></a>
+    <section class="module content">
+        <div class="resp_centro container">
+            <div class="left animatedParent animateOnce">
+                <h3 style="margin-top: 35px;" class="azul titlePags animated bounceInDown">ENTRE EM</h3>
+                <h3 style="margin-top: -30px;" class="titlePags animated bounceInDown">CONTATO</h3>
+            </div>
+
+            <div class="clearBoth"></div>
+
+            <div class="resp_formulario">
+            <form method="post" action="mailto:contatomakeitsoft@gmail.com">
+                <div class="resp_esquerdaForm">
+                    <input id="nome" type="text" class="bordaForm" placeholder="Seu Nome"/>
+                    <input id="email" type="text" class="bordaForm" placeholder="Seu Email" />
+                    <input id="assunto" type="text" class="bordaForm" placeholder="Assunto" />
+                </div>
+                <div class="resp_direitaForm">
+                    <textarea id="mensagem" rows="2" cols="20" placeholder="Sua mensagem..."></textarea>
+                    <input onclick="erroMsg()" id="btnEnviar" class="resp_botaoForm" type="submit"  value="ENVIE A MENSAGEM"/>
+                </div>
+            </form>
+            </div>
+            <div class="clearBoth"></div>
+
+        </div>
+    </section>
+    <div class="clearBoth"></div>
+
+    <section class="module content backCinza">
+        <div class="resp_centro container">
+            <div class="center">
+                <h3 class="resp_titlePacote">Meios de Contato</h3>
+            </div>
+
+            <div class="resp_meiosContato" style="margin-top: 40px;">
+                <div class="resp_boxMeiosContato resp_plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/localizacao.png"/></p>
+                        <h1 class="titleMeios">Endereço</h1>
+                        <h3 class="textMeios">Avenida Lins de Vasconcelos, 1264</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">São Paulo - SP</h3>
+                    </div>
+                </div>
+
+                <div class="resp_boxMeiosContato resp_plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/email.png" /></p>
+                        <h1 class="titleMeios">Email</h1>
+                        <h3 class="textMeios">Entre em contato conosco:</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">contatomakeitsoft@gmail.com</h3>
+                    </div>
+                </div>
+
+                <div class="resp_boxMeiosContato resp_plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/telefone.png" /></p>
+                        <h1 class="titleMeios">Telefone</h1>
+                        <h3 class="textMeios">(11) 98299-8094</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">(11) 98815-5634</h3>
+                    </div>
+                </div>
+                
+                <div class="resp_boxMeiosContato resp_plano01">
+                    <div class="meio01 animatedParent animateOnce">
+                        <p><img class="animated bounceInDown" src="img/skype.png" /></p>
+                        <h1 class="titleMeios">Skype</h1>
+                        <h3 class="textMeios">Nos adicione:</h3>
+                        <h3 class="textMeios" style="margin-top:-10px;">contatoMakeitsoft</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+
+    </section>
+    <div class="clearBoth"></div>
+    <div class="overlay" onClick="style.pointerEvents='none'"></div>
+  <iframe src="https://maps.google.com/maps?hl=en&q=Avenida Paulista, 2000&ie=UTF8&t=m&z=17&iwloc=B&output=embed" width="100%" height="500"></iframe>   
+    
+    <section class="module parallaxFoot parallax-3" style="margin-top:-10px;">
+        <div class="container">
+            <div class="patternFoot">
+                <div class="resp_centro">
+                    <div class="iconsFooter">
+                        <a href="https://twitter.com/webmakeitsoft" target="_blanck"><div class="twitter"></div></a>
+                        <a href="https://www.facebook.com/makeitsoft" target="_blanck"><div class="facebook"></div></a>
+                        <a href="https://www.linkedin.com/profile/view?id=AAMAABsbIWsB1ldaWAdhak2FN7f2iwbMliQD2R8&trk=hp-identity-name" target="_blanck"><div class="linkedin"></div></a>
+                       <a href="https://plus.google.com/u/0/113272510710549042929/posts" target="_blanck"> <div class="googleMais"></div></a>
+                       <a href="https://www.youtube.com/channel/UCSqSwS8r3nl1BUmFSOmgCuQ" target="_blanck"> <div class="youtube"></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <h3 style="margin:0px;"class="textFooter">&copy; Todos os direitos reservados -<span style="color:#2765c8"> Make It Soft</span></h3>
+    </div>
+    </div>
+
+        <!-- body content here -->
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+		
+		<script src="css/css3-animate-it.js"></script>
+</body>
+</html>

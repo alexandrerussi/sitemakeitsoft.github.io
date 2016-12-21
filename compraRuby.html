@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en">
+
+<head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <meta charset="utf-8">
+    <!-- If you delete this meta tag World War Z will become a reality -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Ruby - Make It Soft</title>
+
+    <!-- If you are using the CSS version, only link these 2 files, you may add app.css to use for your overrides if you like -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+
+    <!-- If you are using the gem version, you need this only -->
+
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/ihover.css" rel="stylesheet">
+    <link href="css/menulateralForms.css" rel="stylesheet">
+    <link href="css/compra.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        // <![CDATA[
+        $(document).ready(function () {
+            function filterPath(string) {
+                return string
+                .replace(/^\//, '')
+                .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
+                .replace(/\/$/, '');
+            }
+            $('a[href*=#]').each(function () {
+                if (filterPath(location.pathname) == filterPath(this.pathname)
+                && location.hostname == this.hostname
+                && this.hash.replace(/#/, '')) {
+                    var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                    if ($target) {
+                        var targetOffset = $target.offset().top;
+                        $(this).click(function () {
+                            $('html, body').animate({ scrollTop: targetOffset }, 700);
+                            return false;
+                        });
+                    }
+                }
+            });
+        });
+        // ]]></script>
+
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/erroMsg.js"></script>
+
+</head>
+<body>
+
+<div class="hide-for-medium-down">
+        <header class="header">
+            <div class="centroMenu">
+                <a href="index.html"><img id="imgMenu" src="img/logoSemText.png" /></a>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#sobre">Sobre</a></li>
+                        <li><a href="index.html#equipe">Equipe</a></li>
+                        <li><a href="index.html#servicos">Serviços</a></li>
+                        <li><a href="index.html#pacotes">Planos</a></li>
+                        <li><a href="index.html#portfolio">Portfólio</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+
+
+        <div class="clearBoth"></div>
+
+<section class="module content" style="margin-top:40px;">
+        <div class="centro container">
+            <div class="left" style="margin-left: 300px;">
+                <h3 style="margin-top: 35px; float:left;" class="titlePags">PLANO</h3>
+                <h3 style="margin-top: 35px; float:left; margin-left: 10px;" class="titlePags ruby">RUBY</h3>
+            </div>
+
+        </div>
+        <div class="clearBoth"></div>
+        <div class="centro">
+            <div class="formComprar">
+                <div class="esquerdaForm">
+                    <input id="Text1" type="text" placeholder="Insira seu nome"/>
+                    <input id="Text1" type="text" placeholder="Insira seu sobrenome" />
+                    <input id="Text1" type="text" placeholder="Insira seu telefone" style="width:272px;margin-right:10px; float:left;" />
+                    <input id="Text1" type="text" placeholder="Insira seu celular" style="width:272px; float:left;" />
+                </div>
+                <div class="direitaForm">
+                    <input id="Text1" type="text" placeholder="Insira seu email" />
+                    <input id="Text1" type="text" placeholder="Insira seu CPF" />
+                    <select id="planos">
+                        <option>Ruby - R$3250,00</option>
+                </select>
+                </div>
+                <textarea id="TextArea1" rows="2" cols="20" placeholder="Insira sua mensagem..."></textarea>
+                <input onclick="erroMsg()" class="botaoForm" id="Button1" type="button" style="padding-left: 10px;padding-right:10px;" value="Envie a mensagem" />
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+    </section>
+
+        <div class="footer">
+            <h3 style="margin:0px;"class="textFooter">&copy; Todos os direitos reservados -<span style="color:#2765c8"> Make It Soft</span></h3>
+        </div>
+
+    </div>
+
+
+
+    <!--CELULAR-->
+    <!--CELULAR-->
+    <!--CELULAR-->
+    <!--CELULAR-->
+    <!--CELULAR-->
+
+<div class="show-for-medium-down">
+    <div class="off-canvas-wrap " data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="header"></nav>
+            <a class="right-off-canvas-toggle" href="#">
+                <div class="menu">
+                    <div class="top-bar"></div>
+                    <div class="middle-bar"></div>
+                    <div class="bottom-bar"></div>
+                </div>
+            </a>
+            </nav>
+            <!-- Off Canvas Menu -->
+            <aside class="right-off-canvas-menu">
+                <!-- whatever you want goes here -->
+                <ul class="side-nav main">
+                <li><a class="is-active" href="index.html#homeresp">home</a></li>
+                <li><a href="index.html#sobreresp">sobre</a></li>
+                <li><a href="index.html#equiperesp">equipe</a></li>
+                <li><a href="index.html#servicosresp">serviços</a></li>
+                <li><a href="index.html#pacotesresp">planos</a></li>
+                <li><a href="index.html#portfolioresp">portfólio</a></li>
+                <li><a href="index.html#contatoresp">contato</a></li>
+            </ul>
+            </aside>
+            <section class="hero" style="height:800px;">                
+                
+                    <section class="module content" style="margin-top:40px;">
+        <div class="centro container">
+            <div class="left">
+                <h3 style="margin-top: -70px;" class="titlePags">PLANO</h3>
+                <h3 style="margin-top: -30px;" class="titlePags ruby">RUBY</h3>
+            </div>
+
+
+        </div>
+        <div class="clearBoth"></div>
+        <div class="resp_centro" style="margin-bottom:500px;">
+            <div class="resp_formComprar">
+                <div class="resp_esquerdaForm">
+                    <input id="resp_Text1" type="text" placeholder="Insira seu nome"/>
+                    <input id="resp_Text1" type="text" placeholder="Insira seu sobrenome" />
+                    <input id="resp_Text1" type="text" placeholder="Insira seu telefone" style="width:50%;float:left;" />
+                    <input id="resp_Text1" type="text" placeholder="Insira seu celular" style="width:47.5%; float:right;" />
+                </div>
+                <div class="resp_direitaForm">
+                    <input id="resp_Text1" type="text" placeholder="Insira seu email" />
+                    <input id="resp_Text1" type="text" placeholder="Insira seu CPF" />
+                    <select id="planos">                    
+                        <option>Ruby - R$3250,00</option>
+                </select>
+                <textarea style="margin:0 auto;" id="TextArea1" rows="2" cols="20" placeholder="Insira sua mensagem..."></textarea>
+                <input onclick="erroMsg()" class="resp_botaoForm" id="Button1" type="button" style="width:100%; padding:15px; text-align:center; margin-top:20px;" value="Envie a mensagem" />
+
+                </div>
+            </div>
+        </div>
+        <div class="clearBoth"></div>
+    </section>
+
+            </section>
+            <!-- main content goes here -->
+            <!-- close the off-canvas menu -->
+            <a class="exit-off-canvas"></a>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3 style="margin:0px;"class="textFooter">&copy; Todos os direitos reservados -<span style="color:#2765c8"> Make It Soft</span></h3>
+    </div>
+
+    </div>
+
+
+
+
+    <!-- body content here -->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>

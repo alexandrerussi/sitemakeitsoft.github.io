@@ -1,0 +1,124 @@
+﻿.formComprar{
+    width:100%; 
+    margin-top: 30px;
+}
+
+.resp_formComprar{
+    width:75%; 
+    margin-top: 30px;
+	margin:0 auto;
+}
+
+.formComprar input, select{
+    height: 50px;    
+    margin: 0 0 20px 0;
+}
+
+.formComprar select{
+    background-color: #fff;
+}
+
+.formComprar select:focus{
+    background-color:#fff;
+    border: 1px solid #2765c8;
+}
+
+.formComprar input:focus{
+    background-color:#fff;
+    border: 1px solid #2765c8;
+}
+
+.formComprar textarea{
+    min-height: 150px;
+    width: 100%;
+    margin: 0 0 20px 0; 
+}
+
+.formComprar textarea:focus{
+    background-color:#fff;
+    border: 1px solid #2765c8;
+}
+
+#resp_Text1{
+	height:50px;
+}
+
+.formulario{
+    margin-top: 30px;
+}
+
+.esquerdaForm{
+    width:50%;
+    float:left;
+    padding: 0px 15px 0px 0px;
+}
+
+.direitaForm{
+    width:50%;
+    float:right;
+    padding: 0px 0px 0px 15px;
+}
+
+.resp_esquerdaForm{
+    width:75%;
+    padding: 0px 0px 0px 0px;
+}
+
+.resp_direitaForm{
+    width:75%;
+    padding: 0px 0px 0px 0px;
+}
+
+.formulario input{
+    height: 50px;
+    width: 100%;
+    margin: 0 0 20px 0; 
+}
+
+.formulario input:focus{
+    background-color:#fff;
+    border: 1px solid #2765c8;
+}
+
+.botaoForm{
+    background-color: transparent;
+    border: 1px solid #2765c8;
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    transition: all .3s;
+}
+
+.botaoForm:hover{
+    background-color: #2765c8;    
+    color: #fff;
+    transition: all .3s;
+}
+
+.formulario textarea{
+    max-height: 118px;
+    min-height: 118px;
+    margin: 0 0 20px 0;
+    border: 1px solid #e6e6e6;
+}
+
+.formulario textarea:focus{
+    background-color:#fff;
+    border: 1px solid #2765c8;
+}
+
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;  
+}
+
+:-ms-input-placeholder {  
+   color: #999;  
+}
